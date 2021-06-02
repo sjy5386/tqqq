@@ -19,9 +19,12 @@
         <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
     </a>
     <script type="text/javascript">
+        const ticker = prompt();
+        const requestUrl = `https://finance.yahoo.com/quote/${ticker}`;
+
         Kakao.Link.createScrapButton({
             container: '#create-kakao-link-btn',
-            requestUrl: 'https://developers.kakao.com',
+            requestUrl,
         })
     </script>
 </body>
